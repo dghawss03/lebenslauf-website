@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dariush Ghawss — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">DG</div>
+    <ul class="nav__links">
+      <li><a href="#about">Über mich</a></li>
+      <li><a href="#experience">Erfahrung</a></li>
+      <li><a href="#education">Bildung</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact" class="nav__cta">Kontakt</a></li>
+    </ul>
+    <button class="nav__burger" id="burger" aria-label="Menü öffnen">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">Über mich</a></li>
+      <li><a href="#experience" class="mobile-link">Erfahrung</a></li>
+      <li><a href="#education" class="mobile-link">Bildung</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#contact" class="mobile-link">Kontakt</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero__bg">
+      <div class="hero__grid"></div>
+      <div class="hero__orb hero__orb--1"></div>
+      <div class="hero__orb hero__orb--2"></div>
+    </div>
+    <div class="hero__content">
+      <div class="hero__badge reveal">
+        <span class="hero__badge-dot"></span>
+        Verfügbar für neue Möglichkeiten
+      </div>
+      <h1 class="hero__name reveal">
+        <span class="hero__name-first">Dariush</span>
+        <span class="hero__name-last">Ghawss</span>
+      </h1>
+      <p class="hero__title reveal">Wirtschaftsinformatik Student <span class="hero__title-accent">@</span> Hochschule München</p>
+      <p class="hero__intro reveal">
+        Ich verbinde wirtschaftliches Denken mit technologischem Know-how — leidenschaftlich 
+        für digitale Prozesse, Produktmanagement und datengetriebene Entscheidungen.
+      </p>
+      <div class="hero__actions reveal">
+        <a href="#" class="btn btn--primary">
+          <i class="fas fa-download"></i>
+          Lebenslauf herunterladen
+        </a>
+        <a href="#contact" class="btn btn--outline">
+          <i class="fas fa-envelope"></i>
+          Kontakt aufnehmen
+        </a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">01 / Über mich</span>
+        <h2 class="section__title">Wer ich bin</h2>
+      </div>
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <p class="about__lead">
+            Als angehender Wirtschaftsinformatiker bringe ich eine einzigartige Kombination aus 
+            betriebswirtschaftlichem Verständnis und technischer Affinität mit.
+          </p>
+          <p>
+            Mein Fokus liegt auf der Schnittstelle zwischen Business und IT — dort, wo Technologie 
+            echten unternehmerischen Mehrwert schafft. Ich interessiere mich besonders für 
+            Projektmanagement, digitale Prozessoptimierung und agile Arbeitsmethoden.
+          </p>
+          <p>
+            Neben dem Studium halte ich mich durch Kraftsport fit, erweitere meinen Horizont durch 
+            Lesen, genieße Fahrradtouren durch München und experimentiere gerne in der Küche.
+          </p>
+        </div>
+        <div class="about__cards reveal">
+          <div class="interest-card">
+            <div class="interest-card__icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h4>Wirtschaft & Business</h4>
+            <p>Betriebswirtschaftliche Zusammenhänge und strategisches Denken</p>
+          </div>
+          <div class="interest-card">
+            <div class="interest-card__icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h4>Technik & Informatik</h4>
+            <p>Digitale Lösungen und technologische Innovation</p>
+          </div>
+          <div class="interest-card">
+            <div class="interest-card__icon">
+              <i class="fas fa-diagram-project"></i>
+            </div>
+            <h4>Projektmanagement</h4>
+            <p>Agile Methoden, digitale Prozesse und Produktentwicklung</p>
+          </div>
+          <div class="interest-card">
+            <div class="interest-card__icon">
+              <i class="fas fa-dumbbell"></i>
+            </div>
+            <h4>Hobbys & Lifestyle</h4>
+            <p>Kraftsport · Lesen · Fahrradfahren · Kochen</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">02 / Berufserfahrung</span>
+        <h2 class="section__title">Mein Werdegang</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline__item reveal">
+          <div class="timeline__marker">
+            <div class="timeline__dot"></div>
+            <div class="timeline__line"></div>
+          </div>
+          <div class="timeline__card featured">
+            <div class="timeline__card-header">
+              <div class="timeline__company">
+                <div class="timeline__company-logo">C24</div>
+                <div>
+                  <h3 class="timeline__role">Produktmanagement Aftersales</h3>
+                  <span class="timeline__company-name">CHECK24</span>
+                </div>
+              </div>
+              <span class="timeline__badge timeline__badge--blue">Aktuell</span>
+            </div>
+            <p class="timeline__desc">
+              Unterstützung im Produktmanagement mit Fokus auf Aftersales-Prozesse. 
+              Mitarbeit an der Optimierung digitaler Kundenprozesse und Produktfeatures. 
+              Enge Zusammenarbeit mit cross-funktionalen Teams in einem agilen Umfeld.
+            </p>
+            <div class="timeline__tags">
+              <span class="tag">Produktmanagement</span>
+              <span class="tag">Agile</span>
+              <span class="tag">JIRA</span>
+              <span class="tag">Prozessoptimierung</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__marker">
+            <div class="timeline__dot"></div>
+            <div class="timeline__line"></div>
+          </div>
+          <div class="timeline__card">
+            <div class="timeline__card-header">
+              <div class="timeline__company">
+                <div class="timeline__company-logo">C24</div>
+                <div>
+                  <h3 class="timeline__role">Qualitätssicherung & Kundensupport</h3>
+                  <span class="timeline__company-name">CHECK24</span>
+                </div>
+              </div>
+            </div>
+            <p class="timeline__desc">
+              Sicherstellung der Produkt- und Servicequalität durch systematische Prüfprozesse. 
+              Direkter Kundenkontakt und Lösung komplexer Kundenanliegen. 
+              Identifikation von Verbesserungspotenzialen in Serviceprozessen.
+            </p>
+            <div class="timeline__tags">
+              <span class="tag">QA</span>
+              <span class="tag">Kundenkommunikation</span>
+              <span class="tag">Qualitätssicherung</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__marker">
+            <div class="timeline__dot"></div>
+          </div>
+          <div class="timeline__card compact-cards">
+            <h4 class="compact-cards__title">Weitere Stationen</h4>
+            <div class="compact-cards__grid">
+              <div class="compact-card">
+                <i class="fas fa-briefcase"></i>
+                <div>
+                  <strong>Werkstudent / Praktikum</strong>
+                  <span>Weitere Berufserfahrung in der Wirtschaft</span>
+                </div>
+              </div>
+              <div class="compact-card">
+                <i class="fas fa-users"></i>
+                <div>
+                  <strong>Nebenjobs & Aushilfen</strong>
+                  <span>Verantwortungsbewusstsein und Teamarbeit</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section education" id="education">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">03 / Studium & Bildung</span>
+        <h2 class="section__title">Akademischer Hintergrund</h2>
+      </div>
+      <div class="education__grid">
+
+        <div class="edu-card reveal">
+          <div class="edu-card__accent"></div>
+          <div class="edu-card__icon">
+            <i class="fas fa-university"></i>
+          </div>
+          <div class="edu-card__content">
+            <span class="edu-card__type">Bachelor of Science</span>
+            <h3 class="edu-card__degree">Wirtschaftsinformatik</h3>
+            <p class="edu-card__institution">Hochschule München</p>
+            <p class="edu-card__desc">
+              Studium an der Schnittstelle von Informatik und Betriebswirtschaftslehre. 
+              Schwerpunkte in digitalen Geschäftsprozessen, Softwareentwicklung und 
+              IT-Projektmanagement.
+            </p>
+            <div class="edu-card__tags">
+              <span class="tag">Informatik</span>
+              <span class="tag">BWL</span>
+              <span class="tag">IT-Projektmanagement</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-card__content">
+            <span class="edu-card__type">Fachabitur</span>
+            <h3 class="edu-card__degree">Fachoberschule</h3>
+            <p class="edu-card__institution">FOS Therese von Bayern, München</p>
+            <p class="edu-card__desc">
+              Erfolgreich absolviertes Fachabitur mit Fokus auf wirtschaftliche 
+              und technische Grundlagen. Fundiertes Basiswissen als Sprungbrett 
+              für das Hochschulstudium.
+            </p>
+            <div class="edu-card__tags">
+              <span class="tag">Wirtschaft</span>
+              <span class="tag">Technik</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">04 / IT-Kenntnisse</span>
+        <h2 class="section__title">Tools & Technologien</h2>
+      </div>
+      <div class="skills__grid">
+
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">
+            <i class="fas fa-file-word"></i>
+          </div>
+          <h4>Microsoft Word</h4>
+          <p>Professionelle Dokumentenerstellung und Textverarbeitung</p>
+          <div class="skill-bar">
+            <div class="skill-bar__fill" data-width="85"></div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">
+            <i class="fas fa-file-excel"></i>
+          </div>
+          <h4>Microsoft Excel</h4>
+          <p>Datenanalyse, Tabellenkalkulation und Visualisierungen</p>
+          <div class="skill-bar">
+            <div class="skill-bar__fill" data-width="80"></div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">
+            <i class="fas fa-file-powerpoint"></i>
+          </div>
+          <h4>Microsoft PowerPoint</h4>
+          <p>Professionelle Präsentationen und Visualisierungen</p>
+          <div class="skill-bar">
+            <div class="skill-bar__fill" data-width="88"></div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">
+            <i class="fab fa-jira"></i>
+          </div>
+          <h4>JIRA</h4>
+          <p>Agiles Projektmanagement und Issue-Tracking</p>
+          <div class="skill-bar">
+            <div class="skill-bar__fill" data-width="75"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="soft-skills reveal">
+        <h3 class="soft-skills__title">Soft Skills</h3>
+        <div class="soft-skills__grid">
+          <div class="soft-pill"><i class="fas fa-comments"></i> Kommunikation</div>
+          <div class="soft-pill"><i class="fas fa-users"></i> Teamarbeit</div>
+          <div class="soft-pill"><i class="fas fa-brain"></i> Analytisches Denken</div>
+          <div class="soft-pill"><i class="fas fa-clock"></i> Zeitmanagement</div>
+          <div class="soft-pill"><i class="fas fa-lightbulb"></i> Problemlösung</div>
+          <div class="soft-pill"><i class="fas fa-sync-alt"></i> Adaptabilität</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">05 / Kontakt</span>
+        <h2 class="section__title">Lass uns reden</h2>
+      </div>
+      <div class="contact__grid">
+        <div class="contact__text reveal">
+          <p class="contact__lead">
+            Du hast ein spannendes Projekt, eine offene Stelle oder möchtest einfach 
+            in Kontakt treten? Ich freue mich von dir zu hören.
+          </p>
+          <a href="mailto:dariush.ghawss@example.com" class="btn btn--primary">
+            <i class="fas fa-paper-plane"></i>
+            Nachricht senden
+          </a>
+        </div>
+        <div class="contact__cards reveal">
+          <a href="tel:+49XXXXXXXXXX" class="contact-card">
+            <div class="contact-card__icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div>
+              <span class="contact-card__label">Telefon</span>
+              <strong>+49 (0) XXX XXX XX XX</strong>
+            </div>
+          </a>
+          <a href="mailto:dariush.ghawss@example.com" class="contact-card">
+            <div class="contact-card__icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <span class="contact-card__label">E-Mail</span>
+              <strong>dariush.ghawss@example.com</strong>
+            </div>
+          </a>
+          <div class="contact-card">
+            <div class="contact-card__icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <span class="contact-card__label">Standort</span>
+              <strong>München, Bayern</strong>
+            </div>
+          </div>
+          <a href="#" class="contact-card">
+            <div class="contact-card__icon">
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+            <div>
+              <span class="contact-card__label">LinkedIn</span>
+              <strong>linkedin.com/in/dariush-ghawss</strong>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__logo">DG</span>
+        <p class="footer__copy">© 2025 Dariush Ghawss — Alle Rechte vorbehalten</p>
+        <a href="#home" class="footer__top" aria-label="Nach oben">
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
