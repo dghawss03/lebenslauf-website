@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
@@ -38,7 +38,9 @@
     </ul>
   </div>
 
-  <!-- Hero Section -->
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
   <section class="hero" id="home">
     <div class="hero__bg">
       <div class="hero__grid"></div>
@@ -51,11 +53,10 @@
         Wirtschaftsinformatik Student <span class="hero__title-accent">@</span> Hochschule München
       </p>
       <p class="hero__intro reveal">
-        Ich verbinde wirtschaftliches Denken mit technologischem Know-how — leidenschaftlich
-        für digitale Prozesse, Produktmanagement und datengetriebene Entscheidungen.
+        Ich interessiere mich für die Verbindung aus Wirtschaft und IT, insbesondere für digitale Prozesse und moderne Technologien.
       </p>
       <div class="hero__actions reveal">
-        <a href="#" class="btn btn--primary">
+        <a href="lebenslaufpdf.pdf" download class="btn btn--primary">
           <i class="fas fa-download"></i>
           Lebenslauf herunterladen
         </a>
@@ -71,7 +72,9 @@
     </div>
   </section>
 
-  <!-- About Section -->
+  <!-- ============================================================
+       ÜBER MICH
+  ============================================================ -->
   <section class="section about" id="about">
     <div class="container">
       <div class="section__header reveal">
@@ -80,14 +83,14 @@
       </div>
       <div class="about__grid">
 
-        <!-- Left: Image -->
+        <!-- Bild links -->
         <div class="about__image-col reveal">
           <div class="about__image-wrap">
             <img src="images/bewerbungsbild.png" alt="Dariush Ghawss" class="about__image" />
           </div>
         </div>
 
-        <!-- Right: Text + Cards -->
+        <!-- Text + Karten rechts -->
         <div class="about__right">
           <div class="about__text reveal">
             <p class="about__lead">
@@ -95,7 +98,7 @@
               betriebswirtschaftlichem Verständnis und technischer Affinität mit.
             </p>
             <p>
-              Mein Fokus liegt auf der Schnittstelle zwischen Business und IT — dort, wo Technologie
+              Mein Fokus liegt auf der Schnittstelle zwischen Business und IT, dort wo Technologie
               echten unternehmerischen Mehrwert schafft. Ich interessiere mich besonders für
               Projektmanagement, digitale Prozessoptimierung und agile Arbeitsmethoden.
             </p>
@@ -132,7 +135,9 @@
     </div>
   </section>
 
-  <!-- Experience Section -->
+  <!-- ============================================================
+       BERUFSERFAHRUNG
+  ============================================================ -->
   <section class="section experience" id="experience">
     <div class="container">
       <div class="section__header reveal">
@@ -156,7 +161,13 @@
                   <span class="timeline__company-name">E.ON impulse GmbH | Westenergie</span>
                 </div>
               </div>
-              <span class="timeline__period">Seit 11/2025</span>
+              <div class="timeline__header-right">
+                <span class="timeline__period">Seit 11/2025</span>
+                <a href="ArbeitszeugnisDariushGhawss.pdf" download class="btn btn--zeugnis">
+                  <i class="fas fa-file-pdf"></i>
+                  Arbeitszeugnis
+                </a>
+              </div>
             </div>
             <ul class="timeline__list">
               <li>Unterstützung des Projektmanagements im Bereich Batteriespeichersysteme</li>
@@ -193,11 +204,11 @@
               <span class="timeline__period">03/2025 – 07/2025</span>
             </div>
             <ul class="timeline__list">
-              <li>Projektleitung zur Verbesserung von Reklamationsprozessen</li>
-              <li>Koordination von Feedback-Schleifen innerhalb von Testphasen</li>
-              <li>Vorbereitung und Abstimmung von Projektplänen</li>
-              <li>Analyse und Optimierung von Chatbot- und Kundenprozessen</li>
-              <li>Zusammenarbeit mit cross-funktionalen Teams im agilen Umfeld</li>
+              <li>Eigenverantwortliche Projektleitung zur Verbesserung des Reklamationsprozesses</li>
+              <li>Koordination von Feedback-Schleifen zwischen Entwicklung und Fachabteilung</li>
+              <li>Erarbeitung und Abstimmung von Projektplänen mit relevanten Stakeholdern</li>
+              <li>Analyse und Optimierung des internen Chatbots zur Steigerung der Kundenzufriedenheit</li>
+              <li>Enge Zusammenarbeit mit cross-funktionalen Teams in einem agilen Umfeld</li>
             </ul>
             <div class="timeline__tags">
               <span class="tag">Produktmanagement</span>
@@ -238,7 +249,7 @@
           </div>
         </div>
 
-        <!-- Mehr anzeigen -->
+        <!-- Mehr anzeigen Button -->
         <div class="timeline__more reveal">
           <button class="btn btn--outline btn--more" id="moreBtn">
             <i class="fas fa-chevron-down" id="moreBtnIcon"></i>
@@ -246,51 +257,86 @@
           </button>
         </div>
 
-        <!-- Weitere Stationen (hidden) -->
+        <!-- Weitere Stationen (ausgeblendet) -->
         <div class="timeline__extra" id="extraStations">
           <div class="extra-stations-grid">
+
             <div class="extra-station">
-              <i class="fas fa-industry"></i>
-              <div>
-                <strong>Teststation Dachau Süd</strong>
-                <span>Technische Prüftätigkeiten</span>
+              <div class="extra-station__header">
+                <i class="fas fa-industry"></i>
+                <div>
+                  <strong>Nebenjob – Teststation Dachau Süd</strong>
+                  <span class="extra-station__period">10/2022 – 12/2022</span>
+                </div>
+              </div>
+              <ul class="extra-station__list">
+                <li>Durchführung von Kundentests</li>
+                <li>Auswertung der Ergebnisse</li>
+              </ul>
+            </div>
+
+            <div class="extra-station">
+              <div class="extra-station__header">
+                <i class="fas fa-utensils"></i>
+                <div>
+                  <strong>Nebenjob als Koch – Meat in Bun</strong>
+                  <span class="extra-station__period">08/2021 – 09/2021</span>
+                </div>
+              </div>
+              <ul class="extra-station__list">
+                <li>Vorbereitung und Zubereitung von Speisen nach Qualitätsvorgaben</li>
+                <li>Organisation und Ausgabe der Bestellungen im täglichen Betrieb</li>
+              </ul>
+            </div>
+
+            <div class="extra-station">
+              <div class="extra-station__header">
+                <i class="fas fa-shield-alt"></i>
+                <div>
+                  <strong>Schulpraktikum – Akademie für Sicherheit München UG</strong>
+                  <span class="extra-station__period">02/2021 – 07/2021</span>
+                </div>
+              </div>
+              <ul class="extra-station__list">
+                <li>Betreuung und fachliche Anleitung von Seminarteilnehmern</li>
+                <li>Durchführung administrativer Aufgaben im Seminarbetrieb</li>
+              </ul>
+            </div>
+
+            <div class="extra-station">
+              <div class="extra-station__header">
+                <i class="fas fa-user-tie"></i>
+                <div>
+                  <strong>Schulpraktikum – PASIT GmbH</strong>
+                  <span class="extra-station__period">09/2020 – 01/2021</span>
+                </div>
+              </div>
+              <ul class="extra-station__list">
+                <li>Unterstützung bei der Vermittlung von Fachkräften</li>
+                <li>Mitwirkung an der Optimierung interner Arbeitsabläufe</li>
+              </ul>
+            </div>
+
+            <div class="extra-station">
+              <div class="extra-station__header">
+                <i class="fas fa-car"></i>
+                <div>
+                  <strong>Praktikum – ATU Meisterwerkstatt</strong>
+                  <span class="extra-station__period">08/2019</span>
+                </div>
               </div>
             </div>
+
             <div class="extra-station">
-              <i class="fas fa-utensils"></i>
-              <div>
-                <strong>Meat in Bun</strong>
-                <span>Gastronomie & Kundenkontakt</span>
+              <div class="extra-station__header">
+                <i class="fas fa-child"></i>
+                <div>
+                  <strong>Schulpraktikum – Haus für Kinder Neuhausen</strong>
+                  <span class="extra-station__period">05/2019</span>
+                </div>
               </div>
             </div>
-            <div class="extra-station">
-              <i class="fas fa-shield-alt"></i>
-              <div>
-                <strong>Akademie für Sicherheit München</strong>
-                <span>Sicherheitsdienstleistungen</span>
-              </div>
-            </div>
-            <div class="extra-station">
-              <i class="fas fa-user-tie"></i>
-              <div>
-                <strong>PASIT GmbH</strong>
-                <span>Personaldienstleistung</span>
-              </div>
-            </div>
-            <div class="extra-station">
-              <i class="fas fa-car"></i>
-              <div>
-                <strong>ATU Meisterwerkstatt</strong>
-                <span>Werkstattservice & Kundenbetreuung</span>
-              </div>
-            </div>
-            <div class="extra-station">
-              <i class="fas fa-child"></i>
-              <div>
-                <strong>Haus für Kinder Neuhausen</strong>
-                <span>Soziale Einrichtung</span>
-              </div>
-            </div>
+
           </div>
         </div>
 
@@ -298,7 +344,9 @@
     </div>
   </section>
 
-  <!-- Education Section -->
+  <!-- ============================================================
+       BILDUNG
+  ============================================================ -->
   <section class="section education" id="education">
     <div class="container">
       <div class="section__header reveal">
@@ -318,8 +366,7 @@
             <p class="edu-card__institution">Hochschule München</p>
             <p class="edu-card__desc">
               Studium an der Schnittstelle von Informatik und Betriebswirtschaftslehre.
-              Schwerpunkte in digitalen Geschäftsprozessen, Softwareentwicklung und
-              IT-Projektmanagement.
+              Schwerpunkte in digitalen Geschäftsprozessen, Softwareentwicklung und IT-Projektmanagement.
             </p>
             <div class="edu-card__tags">
               <span class="tag">Informatik</span>
@@ -330,6 +377,10 @@
         </div>
 
         <div class="edu-card reveal">
+          <div class="edu-card__accent"></div>
+          <div class="edu-card__icon">
+            <i class="fas fa-school"></i>
+          </div>
           <div class="edu-card__content">
             <span class="edu-card__type">Fachabitur</span>
             <h3 class="edu-card__degree">Fachoberschule</h3>
@@ -350,7 +401,9 @@
     </div>
   </section>
 
-  <!-- Skills Section -->
+  <!-- ============================================================
+       SKILLS
+  ============================================================ -->
   <section class="section skills" id="skills">
     <div class="container">
       <div class="section__header reveal">
@@ -360,6 +413,7 @@
 
       <div class="skills__categories">
 
+        <!-- Technologien & Entwicklung -->
         <div class="skill-category reveal">
           <h3 class="skill-category__title">
             <span class="skill-category__icon"><i class="fas fa-code"></i></span>
@@ -367,16 +421,17 @@
           </h3>
           <div class="skill-rows">
             <div class="skill-row">
-              <div class="skill-row__label"><span>Java</span><span class="skill-row__level">3.5 / 5</span></div>
-              <div class="skill-bar"><div class="skill-bar__fill" data-width="70"></div></div>
+              <span class="skill-name">Java</span>
+              <div class="skill-bar"><div class="skill-bar__fill" data-width="75"></div></div>
             </div>
             <div class="skill-row">
-              <div class="skill-row__label"><span>SAP</span><span class="skill-row__level">2 / 5</span></div>
+              <span class="skill-name">SAP</span>
               <div class="skill-bar"><div class="skill-bar__fill" data-width="40"></div></div>
             </div>
           </div>
         </div>
 
+        <!-- Projekt- & Kollaborationstools -->
         <div class="skill-category reveal">
           <h3 class="skill-category__title">
             <span class="skill-category__icon"><i class="fas fa-diagram-project"></i></span>
@@ -384,32 +439,33 @@
           </h3>
           <div class="skill-rows">
             <div class="skill-row">
-              <div class="skill-row__label"><span>JIRA</span><span class="skill-row__level">4 / 5</span></div>
+              <span class="skill-name">JIRA</span>
               <div class="skill-bar"><div class="skill-bar__fill" data-width="80"></div></div>
             </div>
             <div class="skill-row">
-              <div class="skill-row__label"><span>Confluence</span><span class="skill-row__level">4 / 5</span></div>
+              <span class="skill-name">Microsoft Planner</span>
               <div class="skill-bar"><div class="skill-bar__fill" data-width="80"></div></div>
             </div>
             <div class="skill-row">
-              <div class="skill-row__label"><span>Microsoft Planner</span><span class="skill-row__level">4 / 5</span></div>
-              <div class="skill-bar"><div class="skill-bar__fill" data-width="80"></div></div>
+              <span class="skill-name">Confluence</span>
+              <div class="skill-bar"><div class="skill-bar__fill" data-width="75"></div></div>
             </div>
             <div class="skill-row">
-              <div class="skill-row__label"><span>Dynamics</span><span class="skill-row__level">3 / 5</span></div>
-              <div class="skill-bar"><div class="skill-bar__fill" data-width="60"></div></div>
+              <span class="skill-name">Miro</span>
+              <div class="skill-bar"><div class="skill-bar__fill" data-width="75"></div></div>
             </div>
             <div class="skill-row">
-              <div class="skill-row__label"><span>Miro</span><span class="skill-row__level">3.5 / 5</span></div>
-              <div class="skill-bar"><div class="skill-bar__fill" data-width="70"></div></div>
-            </div>
-            <div class="skill-row">
-              <div class="skill-row__label"><span>Trello</span><span class="skill-row__level">2.5 / 5</span></div>
+              <span class="skill-name">Dynamics</span>
               <div class="skill-bar"><div class="skill-bar__fill" data-width="50"></div></div>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">Trello</span>
+              <div class="skill-bar"><div class="skill-bar__fill" data-width="40"></div></div>
             </div>
           </div>
         </div>
 
+        <!-- Prozessmanagement & Modellierung -->
         <div class="skill-category reveal">
           <h3 class="skill-category__title">
             <span class="skill-category__icon"><i class="fas fa-sitemap"></i></span>
@@ -417,12 +473,13 @@
           </h3>
           <div class="skill-rows">
             <div class="skill-row">
-              <div class="skill-row__label"><span>BPMN / Signavio</span><span class="skill-row__level">3 / 5</span></div>
-              <div class="skill-bar"><div class="skill-bar__fill" data-width="60"></div></div>
+              <span class="skill-name">BPMN / Signavio</span>
+              <div class="skill-bar"><div class="skill-bar__fill" data-width="70"></div></div>
             </div>
           </div>
         </div>
 
+        <!-- Microsoft Office -->
         <div class="skill-category reveal">
           <h3 class="skill-category__title">
             <span class="skill-category__icon"><i class="fas fa-file-alt"></i></span>
@@ -430,15 +487,15 @@
           </h3>
           <div class="skill-rows">
             <div class="skill-row">
-              <div class="skill-row__label"><span>Word</span><span class="skill-row__level">5 / 5</span></div>
+              <span class="skill-name">Word</span>
               <div class="skill-bar"><div class="skill-bar__fill" data-width="100"></div></div>
             </div>
             <div class="skill-row">
-              <div class="skill-row__label"><span>PowerPoint</span><span class="skill-row__level">5 / 5</span></div>
+              <span class="skill-name">PowerPoint</span>
               <div class="skill-bar"><div class="skill-bar__fill" data-width="100"></div></div>
             </div>
             <div class="skill-row">
-              <div class="skill-row__label"><span>Excel</span><span class="skill-row__level">4 / 5</span></div>
+              <span class="skill-name">Excel</span>
               <div class="skill-bar"><div class="skill-bar__fill" data-width="80"></div></div>
             </div>
           </div>
@@ -446,7 +503,7 @@
 
       </div>
 
-      <!-- Soft Skills (unverändert) -->
+      <!-- Soft Skills -->
       <div class="soft-skills reveal">
         <h3 class="soft-skills__title">Soft Skills</h3>
         <div class="soft-skills__grid">
@@ -462,7 +519,9 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- ============================================================
+       KONTAKT
+  ============================================================ -->
   <section class="section contact" id="contact">
     <div class="container">
       <div class="section__header reveal">
@@ -475,24 +534,24 @@
             Du hast ein spannendes Projekt, eine offene Stelle oder möchtest einfach
             in Kontakt treten? Ich freue mich von dir zu hören.
           </p>
-          <a href="mailto:dariush.ghawss@example.com" class="btn btn--primary">
+          <a href="mailto:dariush.ghawss@gmail.com" class="btn btn--primary">
             <i class="fas fa-paper-plane"></i>
             Nachricht senden
           </a>
         </div>
         <div class="contact__cards reveal">
-          <a href="tel:+49XXXXXXXXXX" class="contact-card">
+          <a href="tel:+4915906364113" class="contact-card">
             <div class="contact-card__icon"><i class="fas fa-phone"></i></div>
             <div>
               <span class="contact-card__label">Telefon</span>
-              <strong>+49 (0) XXX XXX XX XX</strong>
+              <strong>+49 (0) 15906364113</strong>
             </div>
           </a>
-          <a href="mailto:dariush.ghawss@example.com" class="contact-card">
+          <a href="mailto:dariush.ghawss@gmail.com" class="contact-card">
             <div class="contact-card__icon"><i class="fas fa-envelope"></i></div>
             <div>
               <span class="contact-card__label">E-Mail</span>
-              <strong>dariush.ghawss@example.com</strong>
+              <strong>dariush.ghawss@gmail.com</strong>
             </div>
           </a>
           <div class="contact-card">
@@ -512,7 +571,7 @@
     <div class="container">
       <div class="footer__inner">
         <span class="footer__logo">DG</span>
-        <p class="footer__copy">© 2025 Dariush Ghawss — Alle Rechte vorbehalten</p>
+        <p class="footer__copy">© 2026 Dariush Ghawss — Alle Rechte vorbehalten</p>
         <a href="#home" class="footer__top" aria-label="Nach oben">
           <i class="fas fa-arrow-up"></i>
         </a>
