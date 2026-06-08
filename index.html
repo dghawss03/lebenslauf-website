@@ -38,43 +38,92 @@
     </ul>
   </div>
 
-  <!-- ============================================================
-       HERO
-  ============================================================ -->
+  <!-- HERO -->
   <section class="hero" id="home">
     <div class="hero__bg">
       <div class="hero__grid"></div>
       <div class="hero__orb hero__orb--1"></div>
       <div class="hero__orb hero__orb--2"></div>
     </div>
-    <div class="hero__content">
-      <h1 class="hero__name reveal">Dariush Ghawss</h1>
-      <p class="hero__title reveal">
-        Wirtschaftsinformatik Student <span class="hero__title-accent">@</span> Hochschule München
-      </p>
-      <p class="hero__intro reveal">
-        Ich interessiere mich für die Verbindung aus Wirtschaft und IT, insbesondere für digitale Prozesse und moderne Technologien.
-      </p>
-      <div class="hero__actions reveal">
-        <a href="lebenslaufpdf.pdf" download class="btn btn--primary">
-          <i class="fas fa-download"></i>
-          Lebenslauf herunterladen
-        </a>
-        <a href="#contact" class="btn btn--outline">
-          <i class="fas fa-envelope"></i>
-          Kontakt aufnehmen
-        </a>
+
+    <div class="hero__layout">
+
+      <!-- Linke Seite: Text -->
+      <div class="hero__left reveal">
+        <div class="hero__top">
+          <div class="hero__photo-wrap">
+            <img src="images/bewerbungsbild.png" alt="Dariush Ghawss" class="hero__photo" />
+          </div>
+          <div class="hero__text">
+            <h1 class="hero__name">Dariush Ghawss</h1>
+            <p class="hero__title">
+              Wirtschaftsinformatik Student <span class="hero__title-accent">@</span> Hochschule München
+            </p>
+          </div>
+        </div>
+        <p class="hero__intro">
+          Ich stehe für die Verbindung aus wirtschaftlichem Denken und technologischem Know-how. Mein Fokus liegt auf digitalen Prozessen, Projektmanagement und modernen IT-Lösungen.
+        </p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary">
+            <i class="fas fa-envelope"></i>
+            Kontakt aufnehmen
+          </a>
+          <a href="lebenslaufpdf.pdf" download class="btn btn--outline">
+            <i class="fas fa-download"></i>
+            Lebenslauf herunterladen
+          </a>
+        </div>
       </div>
+
+      <!-- Rechte Seite: Highlights -->
+      <div class="hero__right reveal">
+        <div class="hero__card">
+          <div class="hero__card-icon"><i class="fas fa-briefcase"></i></div>
+          <div class="hero__card-text">
+            <strong>Aktuelle Position</strong>
+            <span>PMO Werkstudent bei E.ON impulse GmbH</span>
+          </div>
+        </div>
+        <div class="hero__card">
+          <div class="hero__card-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="hero__card-text">
+            <strong>Studium</strong>
+            <span>Wirtschaftsinformatik an der Hochschule München</span>
+          </div>
+        </div>
+        <div class="hero__card">
+          <div class="hero__card-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="hero__card-text">
+            <strong>Standort</strong>
+            <span>München, Bayern</span>
+          </div>
+        </div>
+        <div class="hero__card">
+          <div class="hero__card-icon"><i class="fas fa-language"></i></div>
+          <div class="hero__card-text">
+            <strong>Sprachen</strong>
+            <span>Deutsch, Englisch, Persisch</span>
+          </div>
+        </div>
+        <div class="hero__card">
+          <div class="hero__card-icon"><i class="fas fa-tools"></i></div>
+          <div class="hero__card-text">
+            <strong>Top Skills</strong>
+            <span>JIRA, Confluence, MS Planner, BPMN</span>
+          </div>
+        </div>
+      </div>
+
     </div>
+
     <div class="hero__scroll">
       <span>Scroll</span>
       <div class="hero__scroll-line"></div>
     </div>
   </section>
 
-  <!-- ============================================================
-       ÜBER MICH
-  ============================================================ -->
+  <!-- ÜBER MICH -->
   <section class="section about" id="about">
     <div class="container">
       <div class="section__header reveal">
@@ -83,28 +132,22 @@
       </div>
       <div class="about__grid">
 
-        <!-- Bild links -->
         <div class="about__image-col reveal">
           <div class="about__image-wrap">
             <img src="images/bewerbungsbild.png" alt="Dariush Ghawss" class="about__image" />
           </div>
         </div>
 
-        <!-- Text + Karten rechts -->
         <div class="about__right">
           <div class="about__text reveal">
             <p class="about__lead">
-              Als angehender Wirtschaftsinformatiker bringe ich eine fundierte Kombination aus
-              betriebswirtschaftlichem Verständnis und technischer Affinität mit.
+              Als angehender Wirtschaftsinformatiker bringe ich eine fundierte Kombination aus betriebswirtschaftlichem Verständnis und technischer Affinität mit.
             </p>
             <p>
-              Mein Fokus liegt auf der Schnittstelle zwischen Business und IT, dort wo Technologie
-              echten unternehmerischen Mehrwert schafft. Ich interessiere mich besonders für
-              Projektmanagement, digitale Prozessoptimierung und agile Arbeitsmethoden.
+              Mein Fokus liegt auf der Schnittstelle zwischen Business und IT, dort wo Technologie echten unternehmerischen Mehrwert schafft. Ich interessiere mich besonders für Projektmanagement, digitale Prozessoptimierung und agile Arbeitsmethoden.
             </p>
             <p>
-              Neben dem Studium halte ich mich durch Kraftsport fit, erweitere meinen Horizont durch
-              Lesen, genieße Fahrradtouren durch München und experimentiere gerne in der Küche.
+              Neben dem Studium halte ich mich durch Kraftsport fit, erweitere meinen Horizont durch Lesen, genieße Fahrradtouren durch München und experimentiere gerne in der Küche.
             </p>
           </div>
           <div class="about__cards reveal">
@@ -126,7 +169,7 @@
             <div class="interest-card">
               <div class="interest-card__icon"><i class="fas fa-dumbbell"></i></div>
               <h4>Hobbys & Lifestyle</h4>
-              <p>Kraftsport · Lesen · Fahrradfahren · Kochen</p>
+              <p>Kraftsport, Lesen, Fahrradfahren und Kochen</p>
             </div>
           </div>
         </div>
@@ -135,9 +178,7 @@
     </div>
   </section>
 
-  <!-- ============================================================
-       BERUFSERFAHRUNG
-  ============================================================ -->
+  <!-- BERUFSERFAHRUNG -->
   <section class="section experience" id="experience">
     <div class="container">
       <div class="section__header reveal">
@@ -157,7 +198,7 @@
               <div class="timeline__company">
                 <div class="timeline__company-logo">EON</div>
                 <div>
-                  <h3 class="timeline__role">PMO – Batteriespeichersysteme (BESS)</h3>
+                  <h3 class="timeline__role">PMO Batteriespeichersysteme (BESS)</h3>
                   <span class="timeline__company-name">E.ON impulse GmbH | Westenergie</span>
                 </div>
               </div>
@@ -168,7 +209,7 @@
               <li>Koordination und Strukturierung projektbezogener Dokumentationen und Ablagen</li>
               <li>Mitwirkung bei der Standardisierung von PMO-Prozessen und Projektstrukturen</li>
               <li>Erstellung und Pflege von Projektberichten, Organigrammen und Statusübersichten</li>
-              <li>Unterstützung bei Meetingkoordination, Aufgabenverfolgung und Stakeholder-Kommunikation</li>
+              <li>Unterstützung bei Meetingkoordination, Aufgabenverfolgung und Stakeholder Kommunikation</li>
             </ul>
             <div class="timeline__tags">
               <span class="tag">PMO</span>
@@ -191,12 +232,12 @@
               <div class="timeline__company">
                 <div class="timeline__company-logo">C24</div>
                 <div>
-                  <h3 class="timeline__role">Praxissemester – Produktmanager Aftersales</h3>
+                  <h3 class="timeline__role">Praxissemester Produktmanager Aftersales</h3>
                   <span class="timeline__company-name">CHECK24</span>
                 </div>
               </div>
               <div class="timeline__header-right">
-                <span class="timeline__period">03/2025 – 07/2025</span>
+                <span class="timeline__period">03/2025 bis 07/2025</span>
                 <a href="ArbeitszeugnisDariushGhawss.pdf" download class="btn btn--zeugnis">
                   <i class="fas fa-file-pdf"></i>
                   Arbeitszeugnis
@@ -229,11 +270,11 @@
               <div class="timeline__company">
                 <div class="timeline__company-logo">C24</div>
                 <div>
-                  <h3 class="timeline__role">Werkstudent – Qualitätssicherung & Kundensupport</h3>
+                  <h3 class="timeline__role">Werkstudent Qualitätssicherung und Kundensupport</h3>
                   <span class="timeline__company-name">CHECK24</span>
                 </div>
               </div>
-              <span class="timeline__period">09/2023 – 02/2025</span>
+              <span class="timeline__period">09/2023 bis 02/2025</span>
             </div>
             <ul class="timeline__list">
               <li>Sicherstellung der Produkt- und Servicequalität durch systematische Prüfprozesse</li>
@@ -249,15 +290,15 @@
           </div>
         </div>
 
-        <!-- Mehr anzeigen Button -->
+        <!-- Mehr anzeigen -->
         <div class="timeline__more reveal">
-          <button class="btn btn--outline btn--more" id="moreBtn">
-            <i class="fas fa-chevron-down" id="moreBtnIcon"></i>
+          <button class="btn--mehr" id="moreBtn">
             <span id="moreBtnText">Weitere Stationen anzeigen</span>
+            <i class="fas fa-chevron-down" id="moreBtnIcon"></i>
           </button>
         </div>
 
-        <!-- Weitere Stationen (ausgeblendet) -->
+        <!-- Weitere Stationen -->
         <div class="timeline__extra" id="extraStations">
           <div class="extra-stations-grid">
 
@@ -265,8 +306,8 @@
               <div class="extra-station__header">
                 <i class="fas fa-industry"></i>
                 <div>
-                  <strong>Nebenjob – Teststation Dachau Süd</strong>
-                  <span class="extra-station__period">10/2022 – 12/2022</span>
+                  <strong>Nebenjob bei der Teststation Dachau Süd</strong>
+                  <span class="extra-station__period">10/2022 bis 12/2022</span>
                 </div>
               </div>
               <ul class="extra-station__list">
@@ -279,8 +320,8 @@
               <div class="extra-station__header">
                 <i class="fas fa-utensils"></i>
                 <div>
-                  <strong>Nebenjob als Koch – Meat in Bun</strong>
-                  <span class="extra-station__period">08/2021 – 09/2021</span>
+                  <strong>Nebenjob als Koch bei Meat in Bun</strong>
+                  <span class="extra-station__period">08/2021 bis 09/2021</span>
                 </div>
               </div>
               <ul class="extra-station__list">
@@ -293,8 +334,8 @@
               <div class="extra-station__header">
                 <i class="fas fa-shield-alt"></i>
                 <div>
-                  <strong>Schulpraktikum – Akademie für Sicherheit München UG</strong>
-                  <span class="extra-station__period">02/2021 – 07/2021</span>
+                  <strong>Schulpraktikum bei der Akademie für Sicherheit München UG</strong>
+                  <span class="extra-station__period">02/2021 bis 07/2021</span>
                 </div>
               </div>
               <ul class="extra-station__list">
@@ -307,8 +348,8 @@
               <div class="extra-station__header">
                 <i class="fas fa-user-tie"></i>
                 <div>
-                  <strong>Schulpraktikum – PASIT GmbH</strong>
-                  <span class="extra-station__period">09/2020 – 01/2021</span>
+                  <strong>Schulpraktikum bei der PASIT GmbH</strong>
+                  <span class="extra-station__period">09/2020 bis 01/2021</span>
                 </div>
               </div>
               <ul class="extra-station__list">
@@ -321,7 +362,7 @@
               <div class="extra-station__header">
                 <i class="fas fa-car"></i>
                 <div>
-                  <strong>Praktikum – ATU Meisterwerkstatt</strong>
+                  <strong>Praktikum in der ATU Meisterwerkstatt</strong>
                   <span class="extra-station__period">08/2019</span>
                 </div>
               </div>
@@ -331,7 +372,7 @@
               <div class="extra-station__header">
                 <i class="fas fa-child"></i>
                 <div>
-                  <strong>Schulpraktikum – Haus für Kinder Neuhausen</strong>
+                  <strong>Schulpraktikum im Haus für Kinder Neuhausen</strong>
                   <span class="extra-station__period">05/2019</span>
                 </div>
               </div>
@@ -344,9 +385,7 @@
     </div>
   </section>
 
-  <!-- ============================================================
-       BILDUNG
-  ============================================================ -->
+  <!-- BILDUNG -->
   <section class="section education" id="education">
     <div class="container">
       <div class="section__header reveal">
@@ -365,8 +404,7 @@
             <h3 class="edu-card__degree">Wirtschaftsinformatik</h3>
             <p class="edu-card__institution">Hochschule München</p>
             <p class="edu-card__desc">
-              Studium an der Schnittstelle von Informatik und Betriebswirtschaftslehre.
-              Schwerpunkte in digitalen Geschäftsprozessen, Softwareentwicklung und IT-Projektmanagement.
+              Studium an der Schnittstelle von Informatik und Betriebswirtschaftslehre. Schwerpunkte in digitalen Geschäftsprozessen, Softwareentwicklung und IT-Projektmanagement.
             </p>
             <div class="edu-card__tags">
               <span class="tag">Informatik</span>
@@ -386,9 +424,7 @@
             <h3 class="edu-card__degree">Fachoberschule</h3>
             <p class="edu-card__institution">FOS Therese von Bayern, München</p>
             <p class="edu-card__desc">
-              Erfolgreich absolviertes Fachabitur mit Fokus auf wirtschaftliche
-              und technische Grundlagen. Fundiertes Basiswissen als Sprungbrett
-              für das Hochschulstudium.
+              Erfolgreich absolviertes Fachabitur mit Fokus auf wirtschaftliche und technische Grundlagen. Fundiertes Basiswissen als Sprungbrett für das Hochschulstudium.
             </p>
             <div class="edu-card__tags">
               <span class="tag">Wirtschaft</span>
@@ -401,9 +437,7 @@
     </div>
   </section>
 
-  <!-- ============================================================
-       SKILLS
-  ============================================================ -->
+  <!-- SKILLS -->
   <section class="section skills" id="skills">
     <div class="container">
       <div class="section__header reveal">
@@ -413,7 +447,6 @@
 
       <div class="skills__categories">
 
-        <!-- Technologien & Entwicklung -->
         <div class="skill-category reveal">
           <h3 class="skill-category__title">
             <span class="skill-category__icon"><i class="fas fa-code"></i></span>
@@ -431,11 +464,10 @@
           </div>
         </div>
 
-        <!-- Projekt- & Kollaborationstools -->
         <div class="skill-category reveal">
           <h3 class="skill-category__title">
             <span class="skill-category__icon"><i class="fas fa-diagram-project"></i></span>
-            Projekt- & Kollaborationstools
+            Projekt & Kollaborationstools
           </h3>
           <div class="skill-rows">
             <div class="skill-row">
@@ -465,7 +497,6 @@
           </div>
         </div>
 
-        <!-- Prozessmanagement & Modellierung -->
         <div class="skill-category reveal">
           <h3 class="skill-category__title">
             <span class="skill-category__icon"><i class="fas fa-sitemap"></i></span>
@@ -479,7 +510,6 @@
           </div>
         </div>
 
-        <!-- Microsoft Office -->
         <div class="skill-category reveal">
           <h3 class="skill-category__title">
             <span class="skill-category__icon"><i class="fas fa-file-alt"></i></span>
@@ -516,12 +546,38 @@
         </div>
       </div>
 
+      <!-- Sprachen -->
+      <div class="languages reveal">
+        <h3 class="soft-skills__title">Sprachen</h3>
+        <div class="languages__grid">
+          <div class="lang-card">
+            <div class="lang-card__icon"><i class="fas fa-globe"></i></div>
+            <div>
+              <strong>Deutsch</strong>
+              <span>Muttersprache</span>
+            </div>
+          </div>
+          <div class="lang-card">
+            <div class="lang-card__icon"><i class="fas fa-globe"></i></div>
+            <div>
+              <strong>Englisch</strong>
+              <span>Fließend</span>
+            </div>
+          </div>
+          <div class="lang-card">
+            <div class="lang-card__icon"><i class="fas fa-globe"></i></div>
+            <div>
+              <strong>Persisch</strong>
+              <span>Muttersprache</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <!-- ============================================================
-       KONTAKT
-  ============================================================ -->
+  <!-- KONTAKT -->
   <section class="section contact" id="contact">
     <div class="container">
       <div class="section__header reveal">
@@ -531,8 +587,7 @@
       <div class="contact__grid">
         <div class="contact__text reveal">
           <p class="contact__lead">
-            Du hast ein spannendes Projekt, eine offene Stelle oder möchtest einfach
-            in Kontakt treten? Ich freue mich von dir zu hören.
+            Du hast ein spannendes Projekt, eine offene Stelle oder möchtest einfach in Kontakt treten? Ich freue mich von dir zu hören.
           </p>
           <a href="mailto:dariush.ghawss@gmail.com" class="btn btn--primary">
             <i class="fas fa-paper-plane"></i>
