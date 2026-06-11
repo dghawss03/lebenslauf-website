@@ -345,6 +345,7 @@ img { max-width: 100%; display: block; }
   letter-spacing: 0.15em;
   text-transform: uppercase;
   z-index: 2;
+  pointer-events: none;
 }
 
 .hero__scroll-line {
@@ -1252,4 +1253,9 @@ img { max-width: 100%; display: block; }
   .hero__photo-wrap { width: 72px; height: 72px; }
   .hero__name { font-size: clamp(1.7rem, 8vw, 2.6rem) !important; }
   .languages__grid { flex-direction: column; }
+}
+
+/* Hide scroll indicator on mobile — overlaps hero cards */
+@media (max-width: 960px) {
+  .hero__scroll { display: none; }
 }
