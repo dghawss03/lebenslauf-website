@@ -211,11 +211,12 @@ img { max-width: 100%; display: block; }
 /* Two-column hero layout */
 .hero__layout {
   display: grid;
-  grid-template-columns: 1fr 320px;
-  gap: 48px;
+  grid-template-columns: minmax(0, 1fr) 390px;
+  gap: clamp(48px, 7vw, 110px);
   align-items: center;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1240px;
+  margin: 0 auto;
   position: relative;
   z-index: 2;
   padding: 0 24px;
@@ -923,6 +924,28 @@ img { max-width: 100%; display: block; }
 }
 .skill-category:hover { border-color: rgba(59,130,246,0.14); }
 
+.skill-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-pills span {
+  padding: 7px 11px;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 7px;
+  background: var(--dark-3);
+  color: rgba(255,255,255,0.74);
+  font-size: 0.78rem;
+  line-height: 1.25;
+}
+
+.skill-pills span:hover {
+  background: var(--blue-dim);
+  border-color: rgba(59,130,246,0.28);
+  color: var(--white);
+}
+
 .skill-category__title {
   font-family: var(--font-head);
   font-size: 0.72rem;
@@ -1258,4 +1281,10 @@ img { max-width: 100%; display: block; }
 /* Hide scroll indicator on mobile — overlaps hero cards */
 @media (max-width: 960px) {
   .hero__scroll { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  .reveal { opacity: 1; transform: none; }
 }

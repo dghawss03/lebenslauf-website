@@ -24,6 +24,8 @@
     menuOpen = forceClose ? false : !menuOpen;
     mobileMenu.classList.toggle('open', menuOpen);
     document.body.style.overflow = menuOpen ? 'hidden' : '';
+    burger.setAttribute('aria-expanded', String(menuOpen));
+    burger.setAttribute('aria-label', menuOpen ? 'Menü schließen' : 'Menü öffnen');
 
     const spans = burger.querySelectorAll('span');
     if (menuOpen) {
@@ -106,10 +108,12 @@
 
       if (extraVisible) {
         extraStations.classList.add('visible');
+        moreBtn.setAttribute('aria-expanded', 'true');
         moreBtnText.textContent = 'Weitere Stationen ausblenden';
         moreBtnIcon.style.transform = 'rotate(180deg)';
       } else {
         extraStations.classList.remove('visible');
+        moreBtn.setAttribute('aria-expanded', 'false');
         moreBtnText.textContent = 'Weitere Stationen anzeigen';
         moreBtnIcon.style.transform = '';
       }
